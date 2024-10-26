@@ -1,0 +1,881 @@
+/* Light mode styles (default) */
+body {
+    background-color: white;
+    color: black;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+
+}
+
+
+
+
+.header{
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 0.6px solid #dbdbdb;
+}
+nav{
+    display: grid;
+    grid-template-columns:  repeat(3,minmax(160px,310px)) ;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    font-size: 25px;
+    border-right: 1px solid black;
+    padding-right: 15px;
+}
+.logo .logo-image{
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 10px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-button{
+    width: 215px;
+    height: 28px;
+    padding: 0px 2px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
+.search-container input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 50px;
+    margin-left: 5px;
+    opacity: 0.7;
+}
+.search-container i{
+    opacity: 0.3;
+    font-size: 12px;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main-menu .icons i{
+    font-size: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.profile{
+    display: grid;
+    grid-template-columns: minmax(364px,1000px);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profile-info{
+    display: grid;
+    grid-template-columns:20% 50%;
+    grid-template-rows:84px 44px 107px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+.profile-info .profile-photo{
+    margin: 0 auto;
+    grid-row: 1/4;
+}
+.profile-info .profile-photo img{
+    border-radius: 50%;
+}
+/* .profile-main-data{
+    display: grid;
+    grid-template-rows: 84px 44px 107px;
+} */
+.profile-info .profile-data-header{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    grid-column-start: 2;
+}
+.profile-data-header *{
+    margin-left: 20px;
+}
+.profile-data-header h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+.profile-data-header button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+.profile-data-header i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.profile-follow-data{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 2/span 1;
+    grid-column-start: 2;
+}
+.profile-follow-data *{
+    margin: 0px 0px 0px 35px;
+}
+.profile-follow-data strong{
+    margin: 0;
+    font-weight: bold;
+}
+.publications{
+    margin: 0;
+}
+.profile-description{
+    padding: 10px 0px;
+    grid-column-start: 2;
+}
+.profile-description strong{
+    font-weight: 500;
+}
+.profile-description p{
+    margin: 3px 0px;
+}
+.profile-description a{
+    text-decoration: none;
+    color: #003569;
+    font-weight: 500;
+}
+.followers,
+.following{
+    cursor: pointer;
+}
+.profile-navigation-container{
+    width: 100%;
+    border-top: 0.3px solid #dbdbdb;
+    height: 30px;
+    margin-top: 30px;
+}
+.profile-navigation-menu{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(90px,150px));
+    grid-template-rows: repeat(2,20px);
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0px 0px 0px; */
+}
+
+.profile-navigation-menu *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/span 2;
+    height: 100%;
+    cursor: pointer;
+}
+.profile-navigation-menu h6{
+    margin: 2.5px 0px 0px 10px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    height: auto;
+    font-size: 12px;
+}
+.profile-navigation-menu i{
+    opacity: 0.3;
+    font-size: 13px;
+    margin-top: 2px;
+    height: auto;
+}
+.work-menu{
+    border-top: 0.2px;
+}
+.work-menu h6,
+.work-menu i{
+   opacity: 1;
+}
+
+.projects-menu{
+    border-top: 0.2px;
+}
+.projects-menu h6,
+.projects-menu i{
+   opacity: 1;
+}
+
+.skills-menu{
+    border-top: 0.2px;
+}
+.skills-menu h6,
+.skills-menu i{
+   opacity: 1;
+}
+
+.edu-menu{
+    border-top: 0.2px;
+}
+.edu-menu h6,
+.edu-menu i{
+   opacity: 1;
+}
+
+.certs-menu{
+    border-top: 0.2px;
+}
+.certs-menu h6,
+.certs-menu i{
+   opacity: 1;
+}
+
+.profile-publications{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(90px,315px));
+    justify-content: space-between;
+    row-gap: 30px; /* Increase this value to add vertical space */
+    column-gap: 20px;
+    position: relative;
+    margin: 15px 0px;
+}
+.profile-publications .profile-img{
+    margin: 0;
+    width: auto;
+    position: relative;
+}
+.profile-publications .profile-img img{
+    width: 100%;
+    vertical-align: top;
+}
+.profile-publications .role-hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-publications .comments{
+    margin-left: 30px;
+}
+.profile-publications .role-hover:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.profile-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    row-gap: 10px; /* Set row gap to 0 */
+    column-gap: 5px; /* Set column gap to 0 */
+    margin: 0; /* Remove margin from the section */
+    padding: 0; /* Remove padding from the section */
+    border-radius:
+}
+
+.profile-skills .profile-img {
+    margin: 0; /* Ensure no margin on figure elements */
+    padding: 0; /* Ensure no padding on figure elements */
+    position: relative; /* Keep relative positioning */
+}
+
+.profile-skills .profile-img img {
+    width: 100%; /* Image should fill the entire figure */
+    vertical-align: top; /* Align the image to the top */
+    display: block; /* Remove inline space below the image */
+}
+
+.skills-hover {
+    position: absolute; /* Position it over the image */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay background color */
+    opacity: 0; /* Initially hidden */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space between the items */
+    padding: 10px; /* Optional padding for hover content */
+    transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.skills-hover:hover {
+    cursor: pointer; /* Change cursor on hover */
+    opacity: 1; /* Show overlay on hover */
+}
+
+.exp {
+    text-align: center; /* Center the text for experience */
+}
+
+.name {
+    display: flex; /* Flexbox for icon and text */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center text horizontally */
+    margin-top: auto; /* Push to bottom of hover area */
+}
+
+/* Highlights container styling */
+.highlights-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%; /* Adjust as needed */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.highlights-wrapper {
+    display: flex;
+    gap: 30px; /* Spacing between highlights */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px 0;
+    scrollbar-width: smooth; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.highlights-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px; /* Spacing between icon and text */
+}
+
+.highlight img {
+    width: 70px; /* Full width for circular shape */
+    height: 70px; /* Full height for circular shape */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image fills the circle */
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.highlight:hover img {
+    transform: scale(1.1); /* Hover effect for icon */
+}
+
+.highlight p {
+    font-size: 12px; /* Font size for text */
+    margin: 0;
+    color: #555; /* Adjust text color */
+}
+
+/* Scroll button styling */
+.scroll-btn {
+    background-color: transparent;
+    color: grey;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: color 0.3s;
+}
+
+.scroll-btn:hover {
+    color: #000;
+}
+
+.left-btn {
+    left: 5px;
+}
+
+.right-btn {
+    right: 5px;
+}
+
+
+
+
+
+
+footer{
+    position: relative;
+    height: 100px;
+    bottom: -101px;
+    width: 100%;
+}
+.footer{
+    display: grid;
+    grid-template-columns: minmax(364px,1000px);
+    justify-content: center;
+    align-items: center;
+}
+.footer .footerContainer{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerContainer ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.footerContainer ul a{
+    text-decoration: none;
+    color: #2d5883;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.footerContainer span{
+    opacity: 0.5;
+    font-size: 12px;
+}
+.small-screen{
+    display: none;
+}
+
+.contact-section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    overflow: hidden;
+}
+.contact-img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.contact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.contact-img:hover img {
+    transform: scale(1.1);
+}
+.role-hover {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.form-container {
+    padding: 20px;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+.form-container button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+.form-container button:hover {
+    background: #0056b3;
+}
+
+
+@media screen and (max-width:775px){
+   .profile-info{
+        justify-content: start;
+        width: 100%;
+        grid-template-columns:minmax(90px,300px) 80%;
+        grid-template-rows: 84px 133px 0px 56px;
+        gap: 0;
+    }
+    .profile-info .profile-photo{
+        grid-row: 1/1;
+        margin-top: 20px;
+        margin-left: 13px;
+    }
+    .profile-photo img{
+        width: 77px;
+    }
+
+    .profile-info .profile-data-header{
+        padding-top: 13px;
+        display: grid;
+        grid-row: 34px 30px;
+        grid-template-columns:160px 30px minmax(50px,400px);
+    }
+    .profile-data-header i{
+        grid-row-start: 1;
+    }
+    .profile-data-header h1{
+        grid-row-start: 1;
+    }
+    .profile-data-header button{
+        grid-column: 1/span 3;
+        width: 100%;
+        margin: 0;
+    }
+    .profile-description{
+        grid-row: 2/4;
+        grid-column: 1/-1;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .profile-follow-dataContainer{
+        width: 100%;
+        grid-row: 4/span 1;
+        grid-column: 1/-1;
+        border-top: 0.3px solid #dbdbdb;
+    }
+    .profile-follow-data{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding:10px 0px;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 300;
+    }
+    .profile-follow-data * strong{
+       display: block;
+    }
+    .profile-navigation-container{
+        margin: 0px;
+    }
+    .profile-navigation-menu h6{
+        display: none;
+    }
+    .profile-navigation-menu i{
+        font-size:20px;
+    }
+    .profile-navigation-menu .work-menu{
+        color: #6ab1f3;
+        border: none;
+    }
+    .profile-publications{
+        column-gap: 10px;
+    }
+    .profile-skills{
+        column-gap: 10px;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+    .footer{
+       display: initial;
+    }
+    .footer .footerContainer{
+        display: initial;
+        height: inherit;
+    }
+    .footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer span{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px){
+    .nav-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .search-container{
+        display: none;
+    }
+}
+
+/* Modal styling */
+.modal {
+display: none; /* Hidden by default */
+position: fixed;
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-title img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+.more_modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+}
+
+/* Modal content */
+.more-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.more-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more-close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        grid-template-columns: 1fr;
+    }
+    .search-container {
+        display: none; /* Hide search on very small screens */
+    }
+    .profile-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .profile-description p {
+        font-size: 10px;
+    }
+    .profile-navigation-menu {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-menu .icons i {
+        font-size: 18px;
+    }
+}
+
+
+/* Modal background styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal content styling */
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f4f4;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    height: 80%;
+    max-width: 1000px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider styling, taking 50% width */
+.modal-slider {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image styling */
+.modal-slider img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+/* Description styling, taking 50% width */
+.modal-description {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10%; /* 10% from the left side of the viewport */
+}
+
+.right-arrow {
+    right: 10%; /* 10% from the right side of the viewport */
+}
+
+.modal-arrow:hover {
+    color: #ccc; /* Optional: add hover effect */
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 12px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.description {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for space */
+    margin: 10px 0; /* Space between descriptions */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.description h3 {
+    font-size: 20px; /* Slightly larger font for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.description p {
+    font-size: 16px; /* Font size for paragraph */
+    color: #333; /* Dark color for readability */
+    margin-bottom: 10px; /* Space below paragraph */
+}
+
+.description ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 20px; /* Indent for bullets */
+}
+
+.description li {
+    margin-bottom: 5px; /* Space between list items */
+}
