@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/3b3a263073.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/instagram_favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <main class="profile">
+        <section class="profile-info">
+            <figure class="profile-photo">
+                <img src="./images/profile_photo.png" alt="User profile" width="150px">
+            </figure>
+            <div class="profile-data-header">
+                <h1 class="profile-name" style="font-size: 24px;">bit-baker</h1>
+<!--                <button class="profile-edit-button">Edit profile</button>-->
+<!--                <i class="fas fa-cog"></i>-->
+            </div>
+            <div class="profile-follow-dataContainer">
+                <div class="profile-follow-data">
+                    <p class="projects"><strong>12</strong> projects</p>
+                    <p class="followers"><strong>5</strong> YOE</p>
+                    <p class="following"><strong>3</strong> certifications</p>
+                <img src="./images/excited.gif" width="200px">
+
+                </div>
+            </div>
+            <div class="profile-description">
+                <strong style="font-size: 16px;">Nandini Chinta</strong>
+                <p style="font-size: 12px;">Data Science</p>
+                <p style="font-size: 12px;">Machine Learning</p>
+                <p style="font-size: 12px;">Software Development</p>
+                <p id="more" style="font-size: 10px; cursor: pointer; opacity: 0.6;">... more</p>
+            </div>
+
+        </section>
+
+          <div id="more_modal" class="modal">
+            <div class="more-modal-content">
+                <span id="more_closeModal" class="more-close">&times;</span>
+                <h2>More About me</h2>
+                <p>ML + Data Pipelines Expert | GCP, Azure, Terraform 💻</p>
+                <p>Builder of Scalable Solutions | Dataflow & Apache Beam 🚀</p>
+                <p>Codevita Champ ’18 🏆 | Best Team Award @TCS</p>
+                <p>Google Cloud Next '24 Representative | Veolia 🌍</p>
+            </div>
+        </div>
+
+        <div class="highlights-container">
+            <button class="scroll-btn left-btn" onclick="scrollLeft()">&#10094;</button>
+            <div class="highlights-wrapper">
+                <div class="highlight">
+                    <img src="./images/python.png" alt="Python" />
+                    <p>Python</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/sql.png" alt="SQL" />
+                    <p>SQL</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/gcp.png" alt="GCP" />
+                    <p>GCP</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/terraform.png" alt="Terraform" />
+                    <p>Terraform</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/docker.png" alt="Docker" />
+                    <p>Docker</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/git.png" alt="Git" />
+                    <p>Git</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/vertexai.png" alt="Vertex AI" />
+                    <p>Vertex AI</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/fastapi.png" alt="FastAPI" />
+                    <p>FastAPI</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/bq.png" alt="Bigquery" />
+                    <p>BigQuery</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/dataflow.png" alt="Dataflow" />
+                    <p>Dataflow</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/datafusion.png" alt="Data Fusion" />
+                    <p>Data Fusion</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/datastream.png" alt="Datastream" />
+                    <p>Datastream</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/cloudrun.png" alt="Cloud Run" />
+                    <p>CloudRun</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/numpy.png" alt="Numpy" />
+                    <p>Numpy</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/pandas.png" alt="Pandas" />
+                    <p>Pandas</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/tensorflow.png" alt="Tensorflow" />
+                    <p>Tensorflow</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/pytorch.png" alt="PyTorch" />
+                    <p>PyTorch</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/keras.png" alt="Keras" />
+                    <p>Keras</p>
+                </div>
+                <div class="highlight">
+                    <img src="./images/sklearn.png" alt="Sci-kit Learn" />
+                    <p>Sci-kit Learn</p>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn" onclick="scrollRight()">&#10095;</button>
+        </div>
+
+        <section class="profile-navigation-container">
+            <div class="profile-navigation-menu">
+                <div class="work-menu nav-item" onclick="openSection('work', this)">
+
+                    <i class="fas fa-border-all"></i>
+                    <h6>Work</h6>
+                </div>
+                <div class="projects-menu nav-item" onclick="openSection('projects', this)">
+                    <i class="fas fa-desktop"></i>
+                    <h6>Projects</h6>
+                </div>
+                <div class="edu-menu nav-item" onclick="openSection('education', this)">
+                    <i class="far fa-bookmark"></i>
+                    <h6>Education</h6>
+                </div>
+                <div class="certs-menu nav-item" onclick="openSection('certifications', this)">
+                    <i class="far fa-user-circle"></i>
+                    <h6>Certifications</h6>
+                </div>
+                <div class="certs-menu nav-item" onclick="openSection('contact', this)">
+                    <i class="far fa-envelope"></i>
+                    <h6>Contact Me</h6>
+                </div>
+            </div>
+        </section>
+
+        <div id="content-container"></div>
+
+        <!-- Modal Structure -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <button class="modal-arrow left-arrow" onclick="prevPost()">&#10094;</button>
+
+
+                <div class="modal-slider">
+                    <img id="modal-image" src="" alt="Detail Image">
+                    <!-- Navigation buttons -->
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                <div class="modal-description">
+                    <img id="modal-logo" src="" alt="Company Logo" style="width: 40px; vertical-align: middle;">
+                    <h2 id="modal-title" style="display: inline-block; margin-left: 10px;"></h2>
+                    <p id="modal-text"></p>
+                </div>
+            </div>
+            <button class="modal-arrow right-arrow" onclick="nextPost()">&#10095;</button>
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const workElement = document.querySelector('.work-menu');
+                openSection('work', workElement);
+            });
+        </script>
+
+    </main>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
