@@ -1,24 +1,12 @@
-# Instagram profile design
-![](https://i.imgur.com/lj4XpcY.png)
-# Visit the preview page [here](https://alexfiorenza-2c3903b38e.drafts.github.io/instagram-profile-design/)
-## HTML Code (replace)
-```html
-<figure class="profile-img">
-    <img src="your-instagram-photos-here" alt="Photo">
-	<div class="liked-comments">
-		<div class="likes"><i class="fas fa-heart"></i><strong>51</strong></div>
-		<div class="comments"><i class="fas fa-comment"></i> <strong>7</strong></div>
-	</div>
-</figure>
-```
+Nanc
+# Visit the preview page [here](https://bit-baker.github.io/)
+
 ### Git install
 
 ##### Clone repository
-> git clone https://github.com/alexFiorenza/instagram-profile-design.git
+> git clone https://github.com/bit-baker/bit-baker.github.io.git
 
 ## Social media
-#### [Instagram](https://www.instagram.com/fiorenza_alex/?hl=es-la)
-#### [Twitter](https://twitter.com/fi0renza_alex)
-#### [Github](https://github.com/alexFiorenza)
+#### [Github](https://github.com/bit-baker)
 # Contact
-**alexfiorenza2012@gmail.com**
+**nandinic@buffalo.edu**
