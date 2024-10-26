@@ -327,75 +327,38 @@ const content = {
     work_1: {
         images: ["./images/veolia_wordcloud.jpg", "./images/veolia_image2.jpg", "./images/veolia_image3.jpg"],
         descriptions: [
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Data Engineering</h3>
-                <p>As a Data Engineering lead, I worked on:</p>
-                <ul>
-                    <li><strong>Robust Data Pipelines:</strong> Designed and implemented data pipelines to streamline data processing.</li>
-                    <li><strong>Data Quality Assurance:</strong> Ensured high-quality data through rigorous testing and validation.</li>
-                    <li><strong>Cross-Functional Collaboration:</strong> Worked closely with data scientists and stakeholders for optimal solutions.</li>
-                </ul>
-            </div>
-            `,
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Machine Learning</h3>
-                <p>In my role, I developed ML models that:</p>
-                <ul>
-                    <li><strong>Predictive Analysis:</strong> Enhanced operational efficiency by predicting outcomes.</li>
-                    <li><strong>Automation:</strong> Automated data-driven decisions to improve productivity.</li>
-                </ul>
-            </div>
-            `,
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Software Engineering</h3>
-                <p>Contributed to software projects by:</p>
-                <ul>
-                    <li><strong>Scalability:</strong> Building scalable applications that handled large data volumes.</li>
-                    <li><strong>Performance Optimization:</strong> Refactoring code for improved performance.</li>
-                </ul>
-            </div>
-            `,
+           `Data Engineering:
+            - Implemented robust data pipelines
+            - Ensured data quality and governance
+            - Collaborated with cross-functional teams`,
+            `Machine Learning:
+            - Developed predictive models
+            - Enhanced operational efficiency
+            - Automated data-driven decision-making`,
+            `Software Engineering:
+            - Built scalable applications
+            - Focused on performance optimization
+            - Engaged in code reviews and refactoring`,
         ]
     },
     work_2: {
         images: ["./images/UB_wordcloud.jpg"],
         descriptions: [
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Research</h3>
-                <p>My research focused on:</p>
-                <ul>
-                    <li><strong>Data Analysis:</strong> Leveraged statistical tools for comprehensive data analysis.</li>
-                    <li><strong>Publications:</strong> Authored papers that contributed to the academic community.</li>
-                </ul>
-            </div>
-            `
+            `Research:
+            - Conducted extensive literature reviews
+            - Analyzed data sets using statistical tools
+            - Published findings in academic journals`
         ]
     },
     work_3: {
         images: ["./images/kaiser_wordcloud.jpg", "./images/kaiser_2.jpg"],
         descriptions: [
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Machine Learning</h3>
-                <p>Implemented ML algorithms for:</p>
-                <ul>
-                    <li><strong>Predictive Analytics:</strong> Improved patient outcomes through data insights.</li>
-                </ul>
-            </div>
-            `,
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Software Engineering</h3>
-                <p>Key contributions included:</p>
-                <ul>
-                    <li><strong>Healthcare Applications:</strong> Developed applications that integrated healthcare data.</li>
-                </ul>
-            </div>
-            `
+             `Machine Learning:
+            - Applied ML algorithms for predictive analytics
+            - Improved patient care through data insights`,
+            `Software Engineering:
+            - Developed applications for healthcare solutions
+            - Focused on integrating systems for seamless data flow`
         ]
     }
 };
