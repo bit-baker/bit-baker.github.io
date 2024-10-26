@@ -278,7 +278,7 @@ function updateModalContent(workId) {
 
     // Update modal image, title, subtitle, logo, and description
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
     document.getElementById('modal-title').innerText = getModalTitle(workId);
     document.getElementById('modal-subtitle').innerText = currentContent.subtitle;
     document.getElementById('modal-logo').src = getModalLogo(workId);
@@ -313,24 +313,62 @@ function nextPost() {
 function prevImage() {
     currentImageIndex = (currentImageIndex - 1 + currentContent.images.length) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 
 const content = {
     work_1: {
-        images: ["./images/veolia_wordcloud.jpg", "./images/veolia_image2.jpg", "./images/veolia_image3.jpg"],
+        images: ["./images/veolia_wordcloud.jpg", "./images/veolia_wordcloud.jpg", "./images/veolia_wordcloud.jpg"],
         descriptions: [
-           `Data Engineering:
-            - Implemented robust data pipelines
-            - Ensured data quality and governance
-            - Collaborated with cross-functional teams`,
+           `<div class="container">
+        <header>
+            <h3>Data Engineering Expertise</h3>
+            <p class="subtitle">Transforming Data into Insights</p>
+        </header>
+
+        <main>
+            <section class="content">
+                <h2>Overview</h2>
+                <div class="data-engineering-info">
+                    <div class="info-box">
+                        <h3>Robust Data Pipelines</h3>
+                        <p>Implemented over 50+ robust data pipelines using Extract, Load, and Transform (ELT) methods, optimizing for both batch and real-time data streaming.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Data Quality & Governance</h3>
+                        <p>Ensured high data quality and governance through meticulous design and implementation of Data Observability frameworks.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Distributed Systems Design</h3>
+                        <p>Led projects from architecture design of distributed systems to production deployments, utilizing GCP tools and Terraform for infrastructure as code.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Query Optimization</h3>
+                        <p>Utilized BigQuery, dbt, and SQL to transform raw data into staging and presentation zones, optimizing queries that reduced costs by 40% and improved execution speed by 50%.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Workflow Orchestration</h3>
+                        <p>Orchestrated data workflows with Python and Prefect, enhancing reliability and conducting training sessions on CI/CD, Terraform, and Python OOP.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Cross-Functional Collaboration</h3>
+                        <p>Collaborated with cross-functional teams to ensure the successful implementation and optimization of data engineering processes.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Data Engineering Showcase | Built with ❤️</p>
+        </footer>
+    </div>`,
             `Machine Learning:
             - Developed predictive models
             - Enhanced operational efficiency
@@ -351,7 +389,7 @@ const content = {
         ]
     },
     work_3: {
-        images: ["./images/kaiser_wordcloud.jpg", "./images/kaiser_2.jpg"],
+        images: ["./images/kaiser_wordcloud.jpg", "./images/kaiser_wordcloud.jpg"],
         descriptions: [
              `Machine Learning:
             - Applied ML algorithms for predictive analytics
@@ -374,7 +412,7 @@ function openDetailPage(workId) {
 
     // Load the first image and description
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 
     // Set title based on the workId
     let title = "";
@@ -408,13 +446,13 @@ function closeModal() {
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 function prevImage() {
     currentImageIndex = (currentImageIndex - 1 + currentContent.images.length) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 // Close modal when clicking outside of the modal content
