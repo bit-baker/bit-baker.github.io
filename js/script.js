@@ -278,7 +278,7 @@ function updateModalContent(workId) {
 
     // Update modal image, title, subtitle, logo, and description
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
     document.getElementById('modal-title').innerText = getModalTitle(workId);
     document.getElementById('modal-subtitle').innerText = currentContent.subtitle;
     document.getElementById('modal-logo').src = getModalLogo(workId);
@@ -313,89 +313,90 @@ function nextPost() {
 function prevImage() {
     currentImageIndex = (currentImageIndex - 1 + currentContent.images.length) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 
 const content = {
     work_1: {
-        images: ["./images/veolia_wordcloud.jpg", "./images/veolia_image2.jpg", "./images/veolia_image3.jpg"],
+        images: ["./images/veolia_wordcloud.jpg", "./images/veolia_wordcloud.jpg", "./images/veolia_wordcloud.jpg"],
         descriptions: [
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Data Engineering</h3>
-                <p>As a Data Engineering lead, I worked on:</p>
-                <ul>
-                    <li><strong>Robust Data Pipelines:</strong> Designed and implemented data pipelines to streamline data processing.</li>
-                    <li><strong>Data Quality Assurance:</strong> Ensured high-quality data through rigorous testing and validation.</li>
-                    <li><strong>Cross-Functional Collaboration:</strong> Worked closely with data scientists and stakeholders for optimal solutions.</li>
-                </ul>
-            </div>
-            `,
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Machine Learning</h3>
-                <p>In my role, I developed ML models that:</p>
-                <ul>
-                    <li><strong>Predictive Analysis:</strong> Enhanced operational efficiency by predicting outcomes.</li>
-                    <li><strong>Automation:</strong> Automated data-driven decisions to improve productivity.</li>
-                </ul>
-            </div>
-            `,
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Software Engineering</h3>
-                <p>Contributed to software projects by:</p>
-                <ul>
-                    <li><strong>Scalability:</strong> Building scalable applications that handled large data volumes.</li>
-                    <li><strong>Performance Optimization:</strong> Refactoring code for improved performance.</li>
-                </ul>
-            </div>
-            `,
+           `<div class="container">
+        <header>
+            <h3>Data Engineering Expertise</h3>
+            <p class="subtitle">Transforming Data into Insights</p>
+        </header>
+
+        <main>
+            <section class="content">
+                <h2>Overview</h2>
+                <div class="data-engineering-info">
+                    <div class="info-box">
+                        <h3>Robust Data Pipelines</h3>
+                        <p>Implemented over 50+ robust data pipelines using Extract, Load, and Transform (ELT) methods, optimizing for both batch and real-time data streaming.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Data Quality & Governance</h3>
+                        <p>Ensured high data quality and governance through meticulous design and implementation of Data Observability frameworks.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Distributed Systems Design</h3>
+                        <p>Led projects from architecture design of distributed systems to production deployments, utilizing GCP tools and Terraform for infrastructure as code.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Query Optimization</h3>
+                        <p>Utilized BigQuery, dbt, and SQL to transform raw data into staging and presentation zones, optimizing queries that reduced costs by 40% and improved execution speed by 50%.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Workflow Orchestration</h3>
+                        <p>Orchestrated data workflows with Python and Prefect, enhancing reliability and conducting training sessions on CI/CD, Terraform, and Python OOP.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Cross-Functional Collaboration</h3>
+                        <p>Collaborated with cross-functional teams to ensure the successful implementation and optimization of data engineering processes.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Data Engineering Showcase | Built with ❤️</p>
+        </footer>
+    </div>`,
+            `Machine Learning:
+            - Developed predictive models
+            - Enhanced operational efficiency
+            - Automated data-driven decision-making`,
+            `Software Engineering:
+            - Built scalable applications
+            - Focused on performance optimization
+            - Engaged in code reviews and refactoring`,
         ]
     },
     work_2: {
         images: ["./images/UB_wordcloud.jpg"],
         descriptions: [
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Research</h3>
-                <p>My research focused on:</p>
-                <ul>
-                    <li><strong>Data Analysis:</strong> Leveraged statistical tools for comprehensive data analysis.</li>
-                    <li><strong>Publications:</strong> Authored papers that contributed to the academic community.</li>
-                </ul>
-            </div>
-            `
+            `Research:
+            - Conducted extensive literature reviews
+            - Analyzed data sets using statistical tools
+            - Published findings in academic journals`
         ]
     },
     work_3: {
-        images: ["./images/kaiser_wordcloud.jpg", "./images/kaiser_2.jpg"],
+        images: ["./images/kaiser_wordcloud.jpg", "./images/kaiser_wordcloud.jpg"],
         descriptions: [
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Machine Learning</h3>
-                <p>Implemented ML algorithms for:</p>
-                <ul>
-                    <li><strong>Predictive Analytics:</strong> Improved patient outcomes through data insights.</li>
-                </ul>
-            </div>
-            `,
-            `
-            <div class="description">
-                <h3 style="color: #1d3557;">Software Engineering</h3>
-                <p>Key contributions included:</p>
-                <ul>
-                    <li><strong>Healthcare Applications:</strong> Developed applications that integrated healthcare data.</li>
-                </ul>
-            </div>
-            `
+             `Machine Learning:
+            - Applied ML algorithms for predictive analytics
+            - Improved patient care through data insights`,
+            `Software Engineering:
+            - Developed applications for healthcare solutions
+            - Focused on integrating systems for seamless data flow`
         ]
     }
 };
@@ -411,7 +412,7 @@ function openDetailPage(workId) {
 
     // Load the first image and description
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 
     // Set title based on the workId
     let title = "";
@@ -445,13 +446,13 @@ function closeModal() {
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 function prevImage() {
     currentImageIndex = (currentImageIndex - 1 + currentContent.images.length) % currentContent.images.length;
     document.getElementById('modal-image').src = currentContent.images[currentImageIndex];
-    document.getElementById('modal-text').innerText = currentContent.descriptions[currentImageIndex];
+    document.getElementById('modal-text').innerHTML = currentContent.descriptions[currentImageIndex];
 }
 
 // Close modal when clicking outside of the modal content
