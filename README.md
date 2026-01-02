@@ -9,4 +9,4 @@ Nanc
 ## Social media
 #### [Github](https://github.com/bit-baker)
 # Contact
-**nandinic@buffalo.edu**
+**nandinic.012@gmail.com**
