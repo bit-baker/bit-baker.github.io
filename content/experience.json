@@ -2,22 +2,22 @@
   {
     "id": "veolia",
     "company": "Veolia North America",
-    "title": "Data Engineer",
+    "title": "Data Engineer & Technical Lead - Data/AI Platform",
     "location": "New Jersey, USA",
     "start_date": "June 2023",
     "end_date": "Present",
     "image": "assets/images/exp_veolia.png", 
-   "genres": ["Infrastructure", "Cloud Architecture", "Data Governance", "Big Data"],
+   "genres": ["Data & AI Platforms", "Infrastructure", "Cloud Architecture", "Distributed Systems", "Data Governance", "Big Data", "Analytics Engineering"],
     "mood": "Scalable • Mission-Critical • Platform-Led",
-    "tags": ["GCP", "Python", "SQL"],
+    "tags": ["GCP", "dbt", "Bigquery", "Python", "SQL"],
     "bullets":  [
-      "Architected and delivered an enterprise Data & AI platform serving six business units, enabling governed warehouses, streaming pipelines, and ML infrastructure on GCP. Improved query latency by 40% and throughput by 35% across 100+ TB/day workloads.",
-      "Standardized ingestion frameworks (CDC, API, SFTP, batch) to enable one-click onboarding of 50+ data sources and operate 1,000+ production tables in BigQuery. Served as interim operational lead ensuring SLA adherence and platform reliability.",
-      "Re-architected batch pipelines into streaming-first architectures using Datastream and Dataflow, reducing data availability from days to seconds while implementing incremental merge, deduplication, and reconciliation frameworks to achieve 99.8% data accuracy.",
-      "Built a self-service access management platform and organization-wide observability layer (freshness SLAs, anomaly detection, cost attribution), cutting access provisioning from two days to seconds and reducing cloud costs by up to 80%.",
-      "Developed production AI pipelines using Document AI and Vertex AI to extract structured data from 10K+ monthly invoices with 98% accuracy, reducing manual processing time by 75% and accelerating downstream analytics.",
-      "Architected a privacy-aware, low-latency voice interaction system using an on-device TFLite wake-word model, noise suppression, and Whisper-based STT, enabling hands-free access to secure internal AI agents and real-time TTS responses."
-    ]
+    "Stepped up as Interim Technical Lead to direct engineering strategy and execution across 6 business units, defining platform architecture, governance, and strict operational SLAs.",
+    "Architected streaming and batch data architectures (Datastream, Dataflow, BigQuery, dbt) processing 100+ TB/day across 1,000+ production tables, reducing data latency from days to seconds and cutting query latency by 40%.",
+    "Architected and deployed an enterprise dbt semantic layer and canonical models, eliminating metric drift across Looker and Power BI reporting suites while establishing single-source-of-truth governance.",
+    "Engineered standardized ingestion frameworks (CDC, API, SFTP) for 150+ sources and built an automated FastAPI Access Platform, cutting policy provisioning from 2 days to under 2 seconds.",
+    "Built comprehensive data observability layers (Dataplex, automated testing, SLA tracking) and cost-attribution controls, boosting overall data accuracy to 99.8% and lowering cloud spend by up to 80%.",
+    "Deployed enterprise ML & GenAI systems—including Document AI processing 10K+ monthly invoices with 98% accuracy (75% time reduction) and an edge TFLite/Whisper voice interaction platform for secure AI agents."
+  ]
   },
   {
     "id": "suny",

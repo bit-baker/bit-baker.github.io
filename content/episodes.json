@@ -325,7 +325,7 @@
         "img": "assets/images/episodes/s7/e2.png",
         "log_line": "If you can't see it fail, you can't lead it.",
         "bullets": [
-          "Built data observability and quality frameworks that turned incidents into insights.",
+          "Built automated data observability and quality testing frameworks (e.g., Great Expectations / dbt tests) that turned incidents into insights.",
           "Designed reliability patterns that made failures visible, actionable, and rare.",
           "Helped teams move from reactive firefighting to proactive system ownership."
         ],
@@ -344,9 +344,21 @@
         "reflection": "My best systems were born from my worst days."
       },
       {
-        "title": "When AI Met Real Operations",
+        "title": "The Language of Metrics",
         "id": "4",
         "img": "assets/images/episodes/s7/e4.png",
+        "log_line": "When everyone measures differently, nobody agrees. I fixed the language.",
+        "bullets": [
+          "Architected an enterprise self-service semantic layer using dbt and BigQuery, defining single-source-of-truth canonical metrics.",
+          "Eliminated metric drift across executive reporting tools, delivering sub-5 minute dashboard availability in Looker and Power BI.",
+          "Engineered an automated FastAPI access platform, cutting policy-based provisioning turnaround from 2 days to under 2 seconds."
+        ],
+        "reflection": "A platform is only as strong as the trust people place in its numbers and security."
+      },
+      {
+        "title": "When AI Met Real Operations",
+        "id": "5",
+        "img": "assets/images/episodes/s7/e5.png",
         "log_line": "Models finally met production reality.",
         "bullets": [
           "Deployed large-scale ML pipelines with real performance, cost, and reliability constraints.",
@@ -357,8 +369,8 @@
       },
       {
         "title": "The Year I Became the Go-To",
-        "id": "5",
-        "img": "assets/images/episodes/s7/e5.png",
+        "id": "6",
+        "img": "assets/images/episodes/s7/e6.png",
         "log_line": "Not by title. By trust.",
         "bullets": [
           "Led through critical platform moments by being the calm constant when things mattered most.",
@@ -369,8 +381,8 @@
       },
       {
         "title": "From Builder to Multiplier",
-        "id": "6",
-        "img": "assets/images/episodes/s7/e6.jpg",
+        "id": "7",
+        "img": "assets/images/episodes/s7/e7.jpg",
         "log_line": "My impact stopped being measured by what I built alone.",
         "bullets": [
           "Created frameworks, templates, and standards that enabled others to move faster and safer.",
@@ -378,6 +390,19 @@
           "Designed systems that scaled not just data - but people."
         ],
         "reflection": "That's when I learned the best engineers eventually become force multipliers."
+      },
+      {
+        "title": "Stepping Into the Gap",
+        "id": "8",
+        "img": "assets/images/episodes/s7/e8.png",
+        "log_line": "Leadership isn't assigned. It's claimed when systems and teams need direction.",
+        "bullets": [
+          "Stepped up as Interim Technical Lead, driving engineering strategy, roadmaps, and resource allocation across major initiatives.",
+          "Partnered with Product, Finance, and Executive stakeholders to align technical strategy directly with business goals.",
+          "Owned holistic architecture across business units, establishing system SLAs, engineering standards, and governance.",
+          "Mentored engineering talent, unblocked critical dependencies, and elevated overall execution and technical rigor."
+        ],
+        "reflection": "Senior leadership is less about writing every line of code and more about architecting clarity—aligning stakeholders, empowering the team, and keeping the big picture in focus."
       }
     ]
   }
